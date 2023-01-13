@@ -1,5 +1,6 @@
 # Double Render Issue: Or How I Learned to Stop Having Two Console Logs and Love the One
-## Essentially, React's strict mode causes double rendering which hinders learning truly about lifecycles. Check src/index.js for further comments.
+
+## Essentially, React's strict mode causes double rendering which hinders learning about React's lifecycles. Check src/index.js for further comments.
 
 # Getting Started with Create React App
 
