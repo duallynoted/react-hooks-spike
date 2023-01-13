@@ -1,17 +1,19 @@
-import React from "react";
-import "./App.scss";
-import IntroApp from "./intro-to-hooks/project-components/intro-app";
-import AddingEvents from "./adding-events/adding-events";
-import OnChangeAndRefs from "./on-change-and-refs/on-change-and-refs";
-import UseMemo from "./use-memo/use-memo";
-import UseEffect from "./use-effect/use-effect";
-import FetchData from "./fetch-data/fetch-data";
+import React from 'react';
+import './App.scss';
+import IntroApp from './intro-to-hooks/project-components/intro-app';
+import AddingEvents from './adding-events/adding-events';
+import OnChangeAndRefs from './on-change-and-refs/on-change-and-refs';
+import UseMemo from './use-memo/use-memo';
+import UseEffect from './use-effect/use-effect';
+import FetchData from './fetch-data/fetch-data';
+import Previous from './previous/previous';
+import TheUseLayoutEffect from './use-layout-effect/the-use-layout-effect';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Intro</h1>
+    <div className='App'>
+      <header className='App-header'>
+        {/* <h1>Intro</h1>
         <IntroApp />
         <h1>Adding Events</h1>
         <AddingEvents />
@@ -21,8 +23,12 @@ function App() {
         <UseEffect />
         <h1>Fetch Data</h1>
         <FetchData />
-        <h2>Use Memo</h2>
-        <UseMemo />
+        <h1>Use Memo</h1>
+        <UseMemo /> 
+        <h1>Use Previous</h1>
+        <Previous /> */}
+        <h1>Use Layout Effect</h1>
+        <TheUseLayoutEffect />
       </header>
     </div>
   );
