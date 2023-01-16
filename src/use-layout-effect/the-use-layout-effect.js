@@ -1,21 +1,21 @@
 import React, { useLayoutEffect, useRef, useState } from 'react';
 import './the-use-layout-effect.scss';
 
-function useDim(el, val) {
+function useDimension(el, val) {
   const [height, setHeight] = useState(0);
   const [width, setWidth] = useState(0);
   useLayoutEffect(() => {
     let boundingBox = el.current.getBoundingClientRect();
     setHeight(boundingBox.height);
     setWidth(boundingBox.width);
-  }, [val]);
+  }, [el, val]);
   return { height, width };
 }
 
 function TheUseLayoutEffect() {
   const [kal, setVal] = useState(2);
   const kalEl = useRef(null);
-  const { height, width } = useDim(kalEl, kal);
+  const { height, width } = useDimension(kalEl, kal);
   return (
     <div className='App'>
       <header className='App-header'>
